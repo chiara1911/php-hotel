@@ -1,14 +1,13 @@
 
+
+<!-- php -->
 <?php
-
 include __DIR__ . "/../model/db.php";
-
-var_dump($hotels);
 ?>
 
 
 
-
+<!-- html -->
 
 <!DOCTYPE html>
 <html lang="en">
