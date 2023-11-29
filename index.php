@@ -6,17 +6,25 @@ include __DIR__ . "/partials/header.php";
 
 if (isset($_GET['parking'])) {
     $parking = $_GET['parking'];
-    var_dump($parking);
+    // var_dump($parking);
     $park_array = [];
     foreach ($hotels as $hotel) {
         if ($hotel['parking'] === (bool) $parking) {
             $park_array[] = $hotel;
         }
-    }
-    $hotels = $park_array;
-    // var_dump($hotels);
-}
-
+    };
+    $hotels = $park_array;   
+};
+if (isset($_GET['vote'])) {
+    $vote = $_GET['vote'];   
+    $vote_array = [];
+    foreach ($hotels as $hotel) {
+        if ($hotel['vote'] <= $vote) {
+            $vote_array[] = $hotel;
+        }       
+    };  
+    $hotels = $vote_array;
+};
 ?>
 
 <!-- html -->

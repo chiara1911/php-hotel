@@ -24,19 +24,20 @@ include __DIR__ . "/../model/db.php";
         <div class=" mt-4">
             <form action="index.php" methods="GET">
                 <select class="form-select m-4 " name="parking" placeholder="seleziona il parcheggio">
-                    <option value="All">Tutti</option>
-                    <option value="0">sì</option>
-                    <option value="1">no</option>
+                     <option value="all">All</option>
+                    <option value="0">no</option>
+                    <option value="1">sì</option>
 
                 </select>
-                <select class="form-select m-4" aria-label="Default select example">
-                    <option selected>seleziona le stelle</option>
-                    <option value="1">Una</option>
-                    <option value="2">Due</option>
-                    <option value="3">Tre</option>
-                    <option value="4">Quattro</option>
-                    <option value="5">Cinque</option>
+                
+                <select class="form-select m-4" aria-label="Default select example" name="vote" placeholder ="seleziona il voto">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
                 </select>
+                <button class="btn btn-outline-success" type="submit">Search</button>
             </form>
         </div>
     </header>
