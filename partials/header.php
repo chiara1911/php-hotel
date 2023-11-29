@@ -1,3 +1,15 @@
+
+<?php
+
+include __DIR__ . "/../model/db.php";
+
+var_dump($hotels);
+?>
+
+
+
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
