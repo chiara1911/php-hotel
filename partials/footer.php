@@ -1,6 +1,6 @@
 <footer class="container">
 
-<h2>goodbye footer</h2>
+<h2>footer</h2>
 </footer>
     
     </body>
