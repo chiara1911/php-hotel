@@ -20,24 +20,22 @@ include __DIR__ . "/../model/db.php";
 </head>
 
 <body>
-    <header class="container">
-        <div class=" mt-4">
-            <form action="index.php" methods="GET">
-                <select class="form-select m-4 " name="parking" placeholder="seleziona il parcheggio">
+    <header class="container pt-4">
+        <div class="mt-4">
+            <form action="index.php" methods="GET" class="m-4">
+                <select class="form-select " name="parking" placeholder="seleziona il parcheggio">
                      <option value="all">All</option>
                     <option value="0">no</option>
                     <option value="1">sì</option>
-
-                </select>
-                
-                <select class="form-select m-4" aria-label="Default select example" name="vote" placeholder ="seleziona il voto">
+                </select>                
+                <select class="form-select mt-3" aria-label="Default select example" name="vote" placeholder ="seleziona il voto">
                     <option value="1">1</option>
                     <option value="2">2</option>
                     <option value="3">3</option>
                     <option value="4">4</option>
                     <option value="5">5</option>
                 </select>
-                <button class="btn btn-outline-success" type="submit">Search</button>
+                <button class="btn btn-primary mt-3 " type="submit">Search</button>
             </form>
         </div>
     </header>
