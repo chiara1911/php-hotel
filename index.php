@@ -4,6 +4,19 @@
 include __DIR__ . "/partials/header.php";
 // var_dump($hotels);
 
+if (isset($_GET['parking'])) {
+    $parking = $_GET['parking'];
+    var_dump($parking);
+    $park_array = [];
+    foreach ($hotels as $hotel) {
+        if ($hotel['parking'] === (bool) $parking) {
+            $park_array[] = $hotel;
+        }
+    }
+    $hotels = $park_array;
+    // var_dump($hotels);
+}
+
 ?>
 
 <!-- html -->
@@ -25,9 +38,10 @@ include __DIR__ . "/partials/header.php";
                     <td><?php echo $hotel['description'] ?></td>
                     <td><?php echo $hotel['vote'] ?></td>
                     <td><?php if ($hotel['parking'] == true) {
-                    echo '<i class=" fa-solid fa-check"></i>' ;}
-                    else {
-                        echo '<i class ="fa-solid fa-xmark"';}
+                            echo '<i class=" fa-solid fa-check"></i>';
+                        } else {
+                            echo '<i class ="fa-solid fa-xmark"></i>';
+                        }
                         ?>
 
                     </td>
